@@ -1,0 +1,217 @@
+/*"Poetsen One"*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  outline: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Poetsen One", sans-serif;
+  background-color: #f4f4f4;
+}
+
+button {
+  font: inherit;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 1 1 250px;
+}
+
+/*section 1*/
+
+.block-1 {
+  overflow: auto;
+  width: 80%;
+  height: 100vh;
+}
+
+.block-1 .h1 {
+  text-align: center;
+  margin: 20px;
+  font-size: 3rem;
+  font-weight: 700;
+  text-decoration: underline;
+  letter-spacing: 0.1em;
+  border-bottom: 3px solid #000;
+  padding-bottom: 20px;
+}
+
+.block-1 .app {
+  margin: 20px 5px 15px 50px;
+  height: auto;
+}
+
+.block-1 .app .h2 {
+  margin: 11px;
+  font-weight: 700;
+  font-size: 2.3rem;
+  letter-spacing: 0.01em;
+}
+
+.block-1 .app .h2::after {
+  content: "❓";
+}
+
+.block-1 .app .btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: auto;
+}
+
+.block-1 .app .btns button {
+  margin: 11px 2px;
+  padding: 8px 65px;
+  width: 60%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 12px;
+  background: rgb(50, 72, 242);
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  box-shadow: 2px 3px 5px #001;
+  transition: 500ms ease-in-out;
+}
+
+.block-1 .app .btns button:hover:not([disabled]) {
+  background: #000080;
+  transform: scale(1.2);
+}
+
+.block-1 .optionsSelect {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  flex-flow: row wrap;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.block-1 .optionsSelect button {
+  padding: 10px;
+  font-size: 1.355rem;
+  font-weight: 700;
+  margin: 12px;
+  width: 4.1%;
+  border: none;
+  background: rgb(6, 6, 99);
+  color: #f4f4f4;
+  cursor: pointer;
+  border-radius: 11px;
+  transition: 500ms ease-in-out;
+}
+
+.block-1 .optionsSelect button:hover:not([disabled]) {
+  background: #00f;
+  transform: scale(1.3);
+}
+.block-1 .app .btns button.selected {
+  background-color: #0056b3;
+}
+.block-1 .app .btns button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.block-2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 19.5%;
+  height: 100vh;
+  border-left: 1.2px solid #000;
+  text-align: center;
+  padding-top: 30px;
+  background-color: #ffffff;
+}
+
+.block-2 figure {
+  height: auto;
+  margin: 20px 0;
+}
+.block-2 figure img {
+  height: auto;
+  cursor: grab;
+  animation: img 5s ease-in-out infinite both;
+}
+
+@keyframes img {
+  0% {
+    transform: scale(1.2);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  75% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.block-2 .eci {
+  font-weight: 700;
+  font-size: 1.655rem;
+}
+
+.selected {
+  background-color: yellow;
+}
+.correct {
+  background-color: green;
+}
+.incorrect {
+  background-color: red;
+}
+
+.dis {
+    background: red;
+    cursor: no-drop;
+}
+
+.tes  {
+  margin-top: 50px;
+  text-align: center;
+}
+.tes  a {
+  padding: 20px 50px;
+  background: blueviolet;
+  color: #ccc;
+  text-align: center;
+  border-radius: 11px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 500ms;
+}
+.tes  a:hover {
+  background: rgb(137, 19, 19);
+
+}
+
+/* https://one.exnesstrack.net/a/xdkql0w4g5 
+
+
+<a href="https://one.exnesstrack.net/intl/en/a/xdkql0w4g5">
+          <img src="https://d3dpet1g0ty5ed.cloudfront.net/EN_Choose_Better_Forex_Conditions_v21200x628px.png" width="1200" height="628" alt="" />
+        </a> */
