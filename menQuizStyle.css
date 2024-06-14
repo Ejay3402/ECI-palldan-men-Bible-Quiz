@@ -25,7 +25,7 @@ button {
 main {
   display: flex;
   flex-flow: row wrap;
-  flex: 1 1 250px;
+  margin-bottom: 20px;
 }
 
 /*section 1*/
@@ -105,8 +105,9 @@ main {
 }
 
 .block-1 .optionsSelect button {
-  padding: 10px;
-  font-size: 1.355rem;
+  text-align: center;
+  padding: 9px;
+  font-size: 4vmin;
   font-weight: 700;
   margin: 12px;
   width: 4.1%;
@@ -143,10 +144,15 @@ main {
 }
 
 .block-2 figure {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 200px;
   height: auto;
-  margin: 20px 0;
+  margin-left: 10px;
 }
 .block-2 figure img {
+  width: 100%;
   height: auto;
   cursor: grab;
   animation: img 5s ease-in-out infinite both;
@@ -154,7 +160,7 @@ main {
 
 @keyframes img {
   0% {
-    transform: scale(1.2);
+    transform: scale(1);
   }
   25% {
     transform: scale(1);
@@ -166,14 +172,16 @@ main {
     transform: scale(1);
   }
   100% {
-    transform: scale(1.2);
+    transform: scale(1);
   }
 }
 
 .block-2 .eci {
   font-weight: 700;
-  font-size: 1.655rem;
+  font-size: 4vmin;
 }
+
+/*JS codes*/
 
 .selected {
   background-color: yellow;
@@ -186,32 +194,189 @@ main {
 }
 
 .dis {
-    background: red;
-    cursor: no-drop;
+  background: red;
+  cursor: no-drop;
 }
 
-.tes  {
-  margin-top: 50px;
-  text-align: center;
+
+/*Index page */
+
+.index {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: #fff;
 }
-.tes  a {
-  padding: 20px 50px;
-  background: blueviolet;
+
+.index-home {
+  flex-flow: column wrap;
+  width: 98%;
+  height: 75vh;
+  flex:1 0 100px ;
+}
+
+.index-home figure{
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.index-home figure .img{
+  text-align: center;
+  width: 210px;
+  height: auto;
+  margin: 20px;
+}
+
+.index-home figure .img img{
+  width: 100%;
+  height: auto;
+}
+
+.index-home figure figcaption {
+  display: flex;
+  justify-content: center;
+  margin-left: 30px;
+  margin-top: 22px;
+}
+
+.index-home figure figcaption h2 {
+  color: #111;
+  text-align: center;
+  letter-spacing: .1em;
+  font-size: 7vmin;
+  font-weight: 700;
+}
+
+.index-home figure figcaption h3 {
+  margin: 30px;
+  color: rgb(16, 107, 16);
+  text-align: center;
+  letter-spacing: .1em;
+  font-size: 8vmin;
+  font-weight: 700;
+}
+
+.index-home figure figcaption .c {
+  margin: 10px;
+  color: rgb(13, 14, 13);
+  text-align: center;
+  letter-spacing: .1em;
+  font-size: 5vmin;
+  font-weight: 700;
+}
+
+.index-home .tes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.index-home .tes a {
+  padding: 20px 56px;
+  background: rgb(85, 23, 218);
   color: #ccc;
   text-align: center;
   border-radius: 11px;
   font-weight: 700;
   text-decoration: none;
   transition: 500ms;
-}
-.tes  a:hover {
-  background: rgb(137, 19, 19);
-
+  font-size: 5vmin;
 }
 
-/* https://one.exnesstrack.net/a/xdkql0w4g5 
+.index-home .tes a:hover {
+  background: rgb(21, 3, 95);
+  animation: shake 2s ease-in-out infinite both;
+}
+
+@keyframes shake {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px , 2px);
+    }
+    40% {
+      transform: translate(-2px , -2px);
+    }
+    60% {
+      transform: translate(2px , 2px);
+    }
+    80% {
+      transform: translate(2px , -2px);
+    }
+    0% {
+      transform: translate(0) scale(1.2);
+    }
+}
+
+/*Heading on the quiz */
+
+.eci-top {
+  display: none;
+}
+
+/*|| media screens*/
 
 
-<a href="https://one.exnesstrack.net/intl/en/a/xdkql0w4g5">
-          <img src="https://d3dpet1g0ty5ed.cloudfront.net/EN_Choose_Better_Forex_Conditions_v21200x628px.png" width="1200" height="628" alt="" />
-        </a> */
+/*|| small laptop */
+
+@media screen and (max-width: 1110px ) {
+  main {
+    display: block;
+    flex-direction: column;
+    flex: 1 1 250px;
+    position: relative;
+    margin-bottom: 450px;
+  }
+
+  .block-1 {
+    width: 100%;
+    position: relative;
+    overflow: none;
+  }
+
+  .block-2 {
+    display: none;
+  }
+
+  .eci-top {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    background: #fff;
+    clear: both;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
+  .eci-top figure {
+    margin: 20px 10px;
+    width: 100px;
+    height: auto;
+    display: block;
+  }
+
+  .eci-top figure img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px;
+  }
+
+  .eci-top h2{
+    text-align: center;
+    padding-top: 40px;
+    letter-spacing: .1em;
+    color: #121;
+    font-weight: 700;
+    font-size: 5vmin;
+  }
+
+  
+}
+
+
+
