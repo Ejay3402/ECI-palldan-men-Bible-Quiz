@@ -1,7 +1,7 @@
 /*"Poetsen One"*/
-
+/*
 @import url("https://fonts.googleapis.com/css2?family=Poetsen+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
+*/
 *,
 *::after,
 *::before {
@@ -53,7 +53,7 @@ main {
 }
 
 .block-1 .app .h2 {
-  margin: 11px;
+  margin: 8px;
   font-weight: 700;
   font-size: 2.3rem;
   letter-spacing: 0.01em;
@@ -98,19 +98,22 @@ main {
   width: 100%;
   height: auto;
   padding: 10px;
-  flex-flow: row wrap;
   display: flex;
+  flex-flow: row wrap;
   text-align: center;
-  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
 }
 
 .block-1 .optionsSelect button {
+  flex-flow: row wrap;
+  flex: 0 0 65px;
   text-align: center;
-  padding: 9px;
-  font-size: 4vmin;
+  padding: 8px 9px;
+  font-size: 1.6rem;
+  width: 4.252%;
   font-weight: 700;
-  margin: 12px;
-  width: 4.1%;
+  margin: 7px 6px;
   border: none;
   background: rgb(6, 6, 99);
   color: #f4f4f4;
@@ -181,6 +184,20 @@ main {
   font-size: 4vmin;
 }
 
+.block-2 h3 {
+  color: rgb(26, 104, 26);
+  font-size: 2rem;
+  margin: 11px auto;
+  font-weight: 700;
+}
+
+.block-2 h4 {
+  color: rgb(2, 14, 26);
+  font-size: 2rem;
+  margin: 11px auto;
+  font-weight: 700;
+}
+
 /*JS codes*/
 
 .selected {
@@ -224,7 +241,7 @@ main {
 
 .index-home figure .img{
   text-align: center;
-  width: 210px;
+  width: 180px;
   height: auto;
   margin: 20px;
 }
@@ -237,6 +254,7 @@ main {
 .index-home figure figcaption {
   display: flex;
   justify-content: center;
+  text-align: center;
   margin-left: 30px;
   margin-top: 22px;
 }
@@ -247,6 +265,7 @@ main {
   letter-spacing: .1em;
   font-size: 7vmin;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .index-home figure figcaption h3 {
@@ -256,6 +275,7 @@ main {
   letter-spacing: .1em;
   font-size: 8vmin;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .index-home figure figcaption .c {
@@ -265,6 +285,10 @@ main {
   letter-spacing: .1em;
   font-size: 5vmin;
   font-weight: 700;
+}
+
+.index-home figure figcaption .c::after  {
+ content: '👇';
 }
 
 .index-home .tes {
@@ -353,8 +377,8 @@ main {
   }
 
   .eci-top figure {
-    margin: 20px 10px;
-    width: 100px;
+    margin: 15px 5px;
+    width: 80px;
     height: auto;
     display: block;
   }
@@ -363,20 +387,57 @@ main {
     width: 100%;
     height: auto;
     display: block;
-    margin: 10px;
   }
 
   .eci-top h2{
     text-align: center;
-    padding-top: 40px;
+    padding-top: 30px;
     letter-spacing: .1em;
     color: #121;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 5vmin;
   }
 
   
 }
 
+@media screen and (max-width: 610px ) {
 
+  .block-1 .h1 {
+    font-size: 2rem;
+  }
+
+  .block-1 .app .h2 {
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .block-1 .app .btns {
+    text-align: center;
+  }
+
+  .block-1 .app {
+    margin: 10px 8px;
+    height: auto;
+  }
+  
+.block-1 .app .btns button {
+  margin: 8px 2px;
+  padding: 11px 45px;
+  width: 80%;
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-align: center;
+ }
+
+ .block-1 .optionsSelect {
+  padding: 5px;
+  width: 100%;
+ }
+
+}
 
