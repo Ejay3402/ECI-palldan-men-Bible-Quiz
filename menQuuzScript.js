@@ -445,3 +445,38 @@ const selectAnswer = (answer, i) => {
 if (questions.length < 0) {
   quizApp.style.display = "none";
 }
+
+
+/*Animations*/
+
+const index1 = document.querySelector('.index-h2');
+
+const main = document.querySelector('.men-quiz');
+
+const indexText = `Evangelical Church International`;
+
+const mainText = `Men Bible Quiz`;
+
+let count = 1;
+
+const showText = () => {
+
+  index1.textContent = indexText.slice(0 , count);
+  count++;
+
+};
+
+setInterval(showText, 150);
+
+const showText1 = () => {
+
+  main.textContent = mainText.slice(0 , count);
+  count++;
+
+  if (count > mainText.length) {
+      count = 1;
+  }
+
+};
+
+setInterval(showText1, 200);
