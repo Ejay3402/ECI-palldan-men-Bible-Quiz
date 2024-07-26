@@ -332,9 +332,119 @@ const questions = [
     },
     correct: `c`,
   },
+  {
+    id: 31,
+    question: "What was the significance of choosing Matthias to replace Judas Iscariot",
+    answers: {
+      a: "A. Increase apostles",
+      b: "B. Show voting importance",
+      c: "C. Give Matthias a leadership role",
+      d: "D. Fulfill prophecy and restore to twelve"
+    },
+    correct: "d",
+  },
+  {
+    id: 32,
+    question: "How did the Holy Spirit's descent on Pentecost impact the church",
+    answers: {
+      a: "A. Caused confusion",
+      b: "B. Enabled speaking in languages and preaching",
+      c: "C. Led to apostles' arrest",
+      d: "D. Forced apostles to leave Jerusalem"
+    },
+    correct: "b",
+  },
+  {
+    id: 33,
+    question: "What does healing the lame beggar signify about the apostles' mission",
+    answers: {
+      a: "A. Miracles by apostles' own power",
+      b: "B. Gaining followers through magic",
+      c: "C. Miracles in Jesus' name to show His power",
+      d: "D. Replacing temple authorities"
+    },
+    correct: "c",
+  },
+  {
+    id: 34,
+    question: "How did Peter and John's response to their arrest show commitment to their mission",
+    answers: {
+      a: "A. They recanted their beliefs",
+      b: "B. Continued preaching despite threats",
+      c: "C. Fled Jerusalem",
+      d: "D. Bribed authorities for release"
+    },
+    correct: "b",
+  },
+  {
+    id: 35,
+    question: "What lesson does the story of Ananias and Sapphira teach about integrity",
+    answers: {
+      a: "A. Deception unnoticed in large communities",
+      b: "B. Financial contributions are unnecessary",
+      c: "C. Honesty and integrity are crucial",
+      d: "D. Church should not ask about finances"
+    },
+    correct: "c",
+  },
+  {
+    id: 36,
+    question: "Why was appointing seven men important for the apostles",
+    answers: {
+      a: "A. To avoid conflicts and care for all, including Greek widows",
+      b: "B. To reduce apostles' tasks",
+      c: "C. To promote them later",
+      d: "D. To show service roles' lesser importance"
+    },
+    correct: "a",
+  },
+  {
+    id: 37,
+    question: "What was the main point of Stephen’s speech, and why did it lead to his martyrdom",
+    answers: {
+      a: "A. Temple was unnecessary",
+      b: "B. Claimed superiority over apostles",
+      c: "C. Call for revolt against Roman rule",
+      d: "D. Leaders resist Holy Spirit and reject messengers"
+    },
+    correct: "d",
+  },
+  {
+    id: 38,
+    question: "How did Philip’s ministry and encounter with the Ethiopian eunuch reflect the church’s expanding mission",
+    answers: {
+      a: "A. Church was only for Jews",
+      b: "B. Gospel for all, including Samaritans and Gentiles",
+      c: "C. Miracles were the focus",
+      d: "D. Jerusalem remained the center"
+    },
+    correct: "b",
+  },
+  {
+    id: 39,
+    question: "What was the significance of Saul’s conversion for the early church",
+    answers: {
+      a: "A. Caused a church split",
+      b: "B. Added a powerful adversary",
+      c: "C. Turned persecutor into advocate",
+      d: "D. Resulted in apostles' imprisonment"
+    },
+    correct: "c",
+  },
+  {
+    id: 40,
+    question: "How did Peter’s vision and visit to Cornelius change the church’s view on Gentiles",
+    answers: {
+      a: "A. Accepted Gentiles without Jewish customs",
+      b: "B. Only Jews could be saved",
+      c: "C. Caused a church rebellion",
+      d: "D. Led to Peter's exile"
+    },
+    correct: "a",
+  }
 ];
 
-while (questions.length < 30) {
+while (questions.length < 40) {
   questions.push({
     id: questions.length + 1,
     q: `${questions.length + 1}`,
@@ -480,3 +590,4 @@ const showText1 = () => {
 };
 
 setInterval(showText1, 200);
+
